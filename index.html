@@ -14,7 +14,7 @@
 <link rel="canonical" href="https://apexwebdigital.com.br/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -30,81 +30,99 @@
   <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
 </svg>
 
-<nav class="nav">
-  <div class="wrap">
-    <a href="index.html" class="brand">
-      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3l7 4v10l-7 4-7-4V7z"/></svg></span>
-      Apex Web Studio
+<header class="header">
+  <a href="index.html" class="logo-container">
+    <div class="logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3l7 4v10l-7 4-7-4V7z"/></svg></div>
+    <span class="logo-text">Apex Web Studio</span>
+  </a>
+  <nav class="nav-links" id="navLinks">
+    <a href="servicos.html">Serviços</a>
+    <a href="para-quem.html">Para quem</a>
+    <a href="como-funciona.html">Como funciona</a>
+    <a href="planos.html">Planos</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+  <div class="header-buttons">
+    <a href="contato.html" class="btn-outline">Contato</a>
+    <a href="https://wa.me/5561999654140?text=Ol%C3%A1!%20Quero%20um%20site%20para%20meu%20neg%C3%B3cio." target="_blank" rel="noopener" class="btn-whatsapp-header">
+      <span class="whatsapp-icon"><svg viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg></span> WhatsApp
     </a>
-    <div class="nav-links" id="navLinks">
-      <a href="servicos.html">Serviços</a>
-      <a href="para-quem.html">Para quem</a>
-      <a href="como-funciona.html">Como funciona</a>
-      <a href="planos.html">Planos</a>
-      <a href="contato.html">Contato</a>
-    </div>
-    <div class="nav-actions">
-      <a class="btn btn-ghost" href="contato.html">Contato</a>
-      <a class="btn btn-whatsapp" href="https://wa.me/5561999654140?text=Ol%C3%A1!%20Quero%20um%20site%20para%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg> WhatsApp
-      </a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-menu"/></svg></button>
-    </div>
+    <button class="menu-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-menu"/></svg></button>
   </div>
-</nav>
+</header>
 
 <main>
 
-  <section class="hero">
-    <div class="wrap">
-      <div class="hero-copy">
-        <span class="tag"><span class="dot"></span>Agência de sites</span>
-        <h1>Sites que vendem<br>para sua <em>clínica</em></h1>
-        <p>Landing pages e sites institucionais rápidos, modernos e otimizados para transformar visitantes em pacientes e clientes.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="planos.html">Ver planos <svg viewBox="0 0 24 24"><use href="#i-arrow"/></svg></a>
-          <a class="btn btn-whatsapp" href="https://wa.me/5561999654140?text=Ol%C3%A1!%20Quero%20falar%20sobre%20um%20site." target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg> Chamar no WhatsApp
-          </a>
-        </div>
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="tag-badge">
+        <span class="dot"></span> AGÊNCIA DE SITES
       </div>
 
-      <div class="hero-visual">
-        <div class="editor">
-          <div class="editor-bar">
-            <div class="editor-dots"><span></span><span></span><span></span></div>
-            <div class="editor-file">site.tsx</div>
-            <div class="editor-status"><span class="pulse-dot"></span>Site no ar</div>
+      <h1>Sites que vendem<br>para sua <span>clínica</span></h1>
+
+      <p class="hero-description">
+        Landing pages e sites institucionais rápidos, modernos e otimizados para transformar visitantes em pacientes e clientes.
+      </p>
+
+      <div class="hero-cta">
+        <a href="planos.html" class="btn-white">Ver planos &rarr;</a>
+        <a href="https://wa.me/5561999654140?text=Ol%C3%A1!%20Quero%20falar%20sobre%20um%20site." target="_blank" rel="noopener" class="btn-green-glow">
+          <span class="whatsapp-icon-btn"><svg viewBox="0 0 24 24" width="18" height="18"><use href="#i-whatsapp"/></svg></span> Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="browser-mockup">
+        <div class="browser-header">
+          <div class="browser-dots">
+            <span></span><span></span><span></span>
           </div>
-          <div class="editor-body">
-            <div><span class="cm">// clínica-vitta.com.br</span></div>
-            <div><span class="kw">export default</span> <span class="fn">function</span> <span class="title">Site</span>() {</div>
-            <div class="in"><span class="kw">return</span> (</div>
-            <div class="in in"><span class="fn">&lt;Landing</span></div>
-            <div class="in in in"><span class="attr">client=</span><span class="str">"Clínica Vitta"</span></div>
-            <div class="in in in"><span class="attr">status=</span><span class="str">"online"</span></div>
-            <div class="in in"><span class="fn">/&gt;</span></div>
-            <div class="in">)</div>
-            <div>}</div>
+          <div class="browser-url">site.tsx</div>
+          <div class="status-badge">
+            <span class="green-dot"></span> Site no ar
           </div>
-          <div class="editor-stats">
-            <div><strong>2.1s</strong><span>carregamento</span></div>
-            <div><strong>98</strong><span>score mobile</span></div>
-            <div><strong>+32</strong><span>leads/semana</span></div>
+        </div>
+        <div class="browser-body">
+          <div><span class="cm">// clínica-vitta.com.br</span></div>
+          <div><span class="kw">export default</span> <span class="fn">function</span> <span class="title">Site</span>() {</div>
+          <div class="in"><span class="kw">return</span> (</div>
+          <div class="in in"><span class="fn">&lt;Landing</span></div>
+          <div class="in in in"><span class="attr">client=</span><span class="str">"Clínica Vitta"</span></div>
+          <div class="in in in"><span class="attr">status=</span><span class="str">"online"</span></div>
+          <div class="in in"><span class="fn">/&gt;</span></div>
+          <div class="in">)</div>
+          <div>}</div>
+        </div>
+        <div class="browser-metrics">
+          <div class="metric">
+            <span class="metric-value">2.1s</span>
+            <span class="metric-label">carregamento</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">98</span>
+            <span class="metric-label">score mobile</span>
+          </div>
+          <div class="metric">
+            <span class="metric-value">+32</span>
+            <span class="metric-label">leads/semana</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <section class="next-section">
+    <div class="tag-badge">
+      <span class="dot"></span> O QUE FAZEMOS
+    </div>
+    <h2>Um site pensado para o seu resultado</h2>
+    <p>Três pilares que guiam cada projeto que entregamos.</p>
+  </section>
+
   <section class="section">
     <div class="wrap">
-      <div class="heading center">
-        <span class="tag"><span class="dot"></span>O que fazemos</span>
-        <h2>Um site pensado para o seu resultado</h2>
-        <p>Três pilares que guiam cada projeto que entregamos.</p>
-      </div>
-
       <div class="grid grid-3">
         <div class="card">
           <div class="card-icon c-cyan"><svg viewBox="0 0 24 24"><use href="#i-layout"/></svg></div>
@@ -184,9 +202,9 @@
 <footer>
   <div class="wrap footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="brand">
-        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3l7 4v10l-7 4-7-4V7z"/></svg></span>
-        Apex Web Studio
+      <a href="index.html" class="logo-container">
+        <div class="logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3l7 4v10l-7 4-7-4V7z"/></svg></div>
+        <span class="logo-text">Apex Web Studio</span>
       </a>
       <p>Sites modernos e estratégicos para clínicas e pequenas empresas que querem crescer online.</p>
       <div class="footer-social">
