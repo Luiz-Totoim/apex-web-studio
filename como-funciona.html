@@ -14,7 +14,7 @@
 <link rel="canonical" href="https://apexwebdigital.com.br/como-funciona.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -26,26 +26,28 @@
   <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
 </svg>
 
-<header class="header">
-  <a href="index.html" class="logo-container">
-    <div class="logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3l7 4v10l-7 4-7-4V7z"/></svg></div>
-    <span class="logo-text">Apex Web Studio</span>
-  </a>
-  <nav class="nav-links" id="navLinks">
-    <a href="servicos.html">Serviços</a>
-    <a href="para-quem.html">Para quem</a>
-    <a href="como-funciona.html" class="is-active">Como funciona</a>
-    <a href="planos.html">Planos</a>
-    <a href="contato.html">Contato</a>
-  </nav>
-  <div class="header-buttons">
-    <a href="contato.html" class="btn-outline">Contato</a>
-    <a href="https://wa.me/5561999654140?text=Ol%C3%A1!%20Quero%20um%20site%20para%20meu%20neg%C3%B3cio." target="_blank" rel="noopener" class="btn-whatsapp-header">
-      <span class="whatsapp-icon"><svg viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg></span> WhatsApp
+<nav class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3l7 4v10l-7 4-7-4V7z"/></svg></span>
+      Apex Web Studio
     </a>
-    <button class="menu-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-menu"/></svg></button>
+    <div class="nav-links" id="navLinks">
+      <a href="servicos.html">Serviços</a>
+      <a href="para-quem.html">Para quem</a>
+      <a href="como-funciona.html" class="is-active">Como funciona</a>
+      <a href="planos.html">Planos</a>
+      <a href="contato.html">Contato</a>
+    </div>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="contato.html">Contato</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/5561999654140?text=Ol%C3%A1!%20Quero%20um%20site%20para%20meu%20neg%C3%B3cio." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><use href="#i-whatsapp"/></svg> WhatsApp
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks"><svg viewBox="0 0 24 24" width="22" height="22"><use href="#i-menu"/></svg></button>
+    </div>
   </div>
-</header>
+</nav>
 
 <main>
 
@@ -104,9 +106,9 @@
 <footer>
   <div class="wrap footer-grid">
     <div class="footer-brand">
-      <a href="index.html" class="logo-container">
-        <div class="logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3l7 4v10l-7 4-7-4V7z"/></svg></div>
-        <span class="logo-text">Apex Web Studio</span>
+      <a href="index.html" class="brand">
+        <span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 3l7 4v10l-7 4-7-4V7z"/></svg></span>
+        Apex Web Studio
       </a>
       <p>Sites modernos e estratégicos para clínicas e pequenas empresas que querem crescer online.</p>
       <div class="footer-social">
